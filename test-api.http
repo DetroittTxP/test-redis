@@ -1,0 +1,15 @@
+@url = http://localhost:6969
+
+
+### set redis
+POST {{url}}/redis/set/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "key":"pond",
+    "value":"beam"
+}
+
+###get redis
+
+GET {{url}}/redis/get/?key=beam HTTP/1.1
